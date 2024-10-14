@@ -2,15 +2,16 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="developer | sysadmin | arch user | self-hoster | gamer | highschooler" >
+    <meta name="description" content="developer | sysadmin | arch user | self-hoster | gamer | highschooler">
+    <meta name="author" content="Abdürrahim YILMAZ">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="https://ayilmaz.xyz/static/favicon.ico">
+	<link rel="icon" type="image/x-icon" href="https://ayilmaz.xyz/static/favicon.ico">
     <title>Abdürrahim YILMAZ</title>
     <style>
         * {
             color: #C9D1D9;
             box-sizing: border-box;
-	    font-family: "Arial", sans-serif;
+            font-family: Arial, sans-serif;
             margin: 0;
         }
         body {
@@ -46,9 +47,9 @@
             padding: 10px;
         }
         #logo {
-            width: 300px;
-            height: 300px;
-            border-radius: 50%;
+            width: 250px;
+            height: 250px;
+            border-radius: 35%;
         }
         ul {
             list-style-type: none;
@@ -57,18 +58,23 @@
         li > a {
             text-decoration: none;
         }
-        a > span {
+        a > p {
             width: 100%;
             display: block;
             background-color: #161B22;
             padding: 10px;
             margin-bottom: 5px;
             border-radius: 5px;
+			transition: background 0.25s ease;
         }
+		a > p:hover {
+			background-color: #232323;
+		}
         h1, h2 {
             text-align: center;
             margin-bottom: 10px;
             margin-top: 10px;
+			color: #C9D1D9;
         }
         .non-selectable {
             -webkit-touch-callout: none;
@@ -83,44 +89,63 @@
 <body>
     <main>
         <header>
-            <img class="non-selectable" src="https://avatars.githubusercontent.com/u/84680978?v=4" alt="logo" id="logo">
-            <h1>Abdürrahim YILMAZ</h1>
-            <p>developer | sysadmin | arch user | self-hoster | gamer | highschooler</p>
+			<img class="non-selectable" src="https://avatars.githubusercontent.com/u/84680978?v=4" alt="logo" id="logo">
+            <h1 class="non-selectable">Abdürrahim YILMAZ</h1>
+            <p class="non-selectable">developer | sysadmin | arch user | self-hoster | gamer | highschooler</p>
         </header>
 
         <nav>
+
+                <h2 class="non-selectable">Development</h2>
+                <div class="dev">
+                    <ul>
+
+                            <li>
+                                <a href="https://github.com/yilmaz08">
+                                    <p class="non-selectable">GitHub</p>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="https://gitlab.com/yilmaz08">
+                                    <p class="non-selectable">GitLab</p>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="https://leetcode.com/u/ayilmaz08/">
+                                    <p class="non-selectable">LeetCode</p>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="https://huggingface.co/ayilmaz08">
+                                    <p class="non-selectable">Hugging Face</p>
+                                </a>
+                            </li>
+
+                    </ul>
+                </div>
 
                 <h2 class="non-selectable">Social</h2>
                 <div class="social">
                     <ul>
 
                             <li>
-                                <a href="https://github.com/yilmaz08">
-                                    <span>GitHub</span>
-                                </a>
-                            </li>
-
-                            <li>
-                                <a href="https://gitlab.com/yilmaz08">
-                                    <span>GitLab</span>
-                                </a>
-                            </li>
-
-                            <li>
-                                <a href="https://huggingface.co/ayilmaz08">
-                                    <span>Hugging Face</span>
+                                <a href="https://www.linkedin.com/in/abd%C3%BCrrahim-yilmaz-924262324/">
+                                    <p class="non-selectable">LinkedIn</p>
                                 </a>
                             </li>
 
                             <li>
                                 <a href="https://twitter.com/ayilmazdev">
-                                    <span>Twitter</span>
+                                    <p class="non-selectable">Twitter</p>
                                 </a>
                             </li>
 
                             <li>
                                 <a href="https://mastodon.social/@ayilmaz">
-                                    <span>Mastodon</span>
+                                    <p class="non-selectable">Mastodon</p>
                                 </a>
                             </li>
 
@@ -133,21 +158,19 @@
 
                             <li>
                                 <a href="https://ayilmaz.xyz/ayilmaz.gpg">
-                                    <span>PGP</span>
+                                    <p class="non-selectable">PGP</p>
                                 </a>
                             </li>
 
                             <li>
                                 <a href="mailto:ayilmaz@ayilmaz.xyz">
-                                    <span>Email</span>
+                                    <p class="non-selectable">Email</p>
                                 </a>
                             </li>
 
                             <li>
-
-                            <li>
                                 <a href="https://t.me/ayilmaz08">
-                                    <span>Telegram</span>
+                                    <p class="non-selectable">Telegram</p>
                                 </a>
                             </li>
 
@@ -157,10 +180,8 @@
         </nav>
 
         <footer>
-            <p>Powered by <a href="https://github.com/yilmaz08/linkjinja">LinkJinja</a></p>
+            <p class="non-selectable">Powered by <a href="https://github.com/yilmaz08/linkjinja">LinkJinja</a></p>
         </footer>
     </main>
-
-    <script></script>
 </body>
 </html>
